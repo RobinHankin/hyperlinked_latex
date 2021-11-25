@@ -1,0 +1,49 @@
+\newcommand{\quotienthelptext}{
+  \section{Quotient help}
+
+  Given a Lie algebra $L$ and an \ideal\ $I$, the {\bf quotient
+    algebra} $L/I$ is is an algebra defined on cosets of $I$ under Lie
+  brackets.
+
+  \mainbox{Formally, if $L$ is a \liealgebra\ and then $I$ an ideal of
+    $L$, then the quotient algebra is defined on $I$-cosets
+    $I+x=\left\{i+x\colon i\in I\right\}$ with Lie bracket given by }{
+    \bracket{I+x}{I+y}=I+\bracket{x}{y},\qquad x,y\in L}{where
+    $\bracket{x}{y}$ is the Lie bracket of $L$}
+
+
+  Note that this is well-defined: $\bracket{I+x}{I+y}$ fepends only on
+  the cosets containing $x$ and $y$, not the particular elements
+  chosen to represent the cosets.  To prove this, we consider two
+  elements $x,x'$ that specify the same coset: $I+x=I+x'$, or $x-x'\in
+  I$; similarly we consider two elements $y,y'$ with $y-y'\in I$.
+  Then
+  \begin{flalign*}
+    \bracket{x'}{y'} &= \bracket{(x'-x)+x}{(y'-y)+y} &&\\
+    &=
+    \bracket{x'-x}{y'-y}+
+    \bracket{x'-x}{y} + 
+    \bracket{x}{y'-y} + 
+    \bracket{x}{y}&&
+  \end{flalign*}
+  and on the last line, the first three terms are members of $I$
+  (because $I$ is an \ideal).  Thus
+  $\bracket{I+x'}{I+y'}=I+\bracket{x}{y}$, showing that
+  $\bracket{x}{y}=\bracket{x'}{y'}$ and thus the Lie bracket does not
+  depend on the particular element chosen to describe the coset: the
+  Lie bracket operator is well-defined.
+  
+  
+\subsection*{Examples}
+
+
+\subsection*{Facts}
+\begin{itemize}
+\item The map $\pi\colon L\longrightarrow L/I$ (which maps $z\in L$ to
+  its coset $I+z$) is a \liealgebrahomo.
+\item 
+\item 
+\end{itemize}
+
+ \newpage
+}

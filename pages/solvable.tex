@@ -1,0 +1,37 @@
+\newcommand{\solvablehelptext}{
+  \section{Solvable help}
+
+  A Lie algebra is {\bf solvable} if the \derivedseries\ eventually descends to
+  the trivial algebra $0$.
+
+  \mainbox{Formally, $L$ is solvable if}{L^{(m)}=0\qquad\mbox{for some $m\geqslant 1$}}{where $L^{(1)}, L^{(2)},\ldots$ is the \derivedseries\ of $L$.}
+
+  \subsection*{Examples}
+  \begin{itemize}
+    \item The algebra of upper triangular matrices is solvable.  But
+      \sltwoc\ is not, for its \derivedalgebra\ is equal to itself.
+  \end{itemize}
+
+  \subsection*{Facts}
+  given $L$, a Lie algevra, and $V$, a nonzero vectorspace:
+  \begin{itemize}
+    \item The largest solvable \ideal\ of $L$ is called the
+      \radicalideal\ of $L$.
+    \item If $L$ is solvable then every \subalgebra\ of $L$ is solvable.
+    \item If $I$ is an ideal of $L$ with both $I$ and $L/I$ solvable, then $L$
+      is solvable.
+    \item If $I$ and $J$ are solvable ideals of $L$, then
+      $I+J=\operatorname{span}(x+y\colon x\in I, y\in J)$ is a
+      solvable ideal of $L$.
+      \item (Lie's theorem).  If $V$ is a finite-dimensional complex
+        vector space, and $L$ a solvable Lie \subalgebra\ of \glv,
+        then there is a basis of $V$ in which every element of $L$ is
+        (represented by) an upper triangular matrix.
+      \item If $L$ is a solvable Lie \subalgebra\ of \glv, then there
+        is some nonzero $v\in V$ wiht is a {\em simultaneous}
+        eigenvector for all $x\in L$.
+\end{itemize}
+
+
+  \newpage
+}

@@ -1,0 +1,48 @@
+\newcommand{\adjointhelptext}{   % \adjoint and \adjointmath link here
+\section{Adjoint help here}
+
+The {\bf adjoint}, or {\bf adjoint homomorphism} is a map from a
+\liealgebra\ $L$ to $\mathsf{gl}(L)$, the set of all linear maps from
+$L$ to itself.  
+
+\mainbox{Formally,
+}{
+  \operatorname{ad}\colon L\mapsto\mathsf{gl}(L); \qquad
+(\operatorname{ad} x)(y)=\bracket{x}{y}
+}
+
+\subsection*{Notes}
+
+The definition requires some unpacking.  If $x\in L$, then
+$\operatorname{ad}(\cdot)$ maps $x$ to a member of $\mathsf{gl}(L)$.
+We might write ``$\operatorname{ad}(x)=f$'' and then, noting that
+$f\in\mathsf{gl}(L)$, ask what $f$ maps $y\in L$ to; the answer being
+that $f(y)=\bracket{x}{y}$.  Alternatively, we might write
+
+  \boxeq{\operatorname{(ad} x)(y)=\bracket{x}{y}}
+
+
+For $\bracket{x}{\bracket{x}{\bracket{x}{y}}}$ we would have
+$\left(\adjointmath x\right)^4(y)$.
+ 
+
+  \subsection*{Facts}
+  \begin{itemize}
+  \item We can view the \adjoint\ as a map from a Lie algebra $L$ to
+    the endomorphism group $\operatorname{End}(L)$ of $L$, given by
+    $x\mapsto (\adjointmath x)$.  This map is a \liealgebrahomo, for
+    \[
+    \bracket{x}{y}\mapsto(\adjointmath \bracket{x}{y}) = (\adjointmath
+    x)(\adjointmath y)-(\adjointmath y)(\adjointmath
+    x)=\bracket{\adjointmath x}{\adjointmath y}\] (the proof uses the
+    Jacobi identity; it is not obvious).
+  \item The adjoint map is a \derivation, for $(\adjointmath
+    x)\bracket{y}{z} = \bracket{(\adjointmath x) y}{z}
+    +\bracket{y}{(\adjointmath x) z}$.
+    \item The adjoint map is a \representation.
+
+  \end{itemize}
+  
+  
+ \newpage
+}

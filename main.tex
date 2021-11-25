@@ -1,0 +1,37 @@
+\documentclass[fleqn]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{empheq}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+\usepackage{yfonts}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\newtcbox{\mymath}[1][]{%
+    nobeforeafter, math upper, tcbox raise base,
+    enhanced, colframe=blue!30!black,
+    colback=blue!30, boxrule=1pt,
+    #1}
+\tcbset{highlight math style={boxsep=5mm,colback=blue!30!red!30!white}}
+ 
+\urlstyle{same}
+\include{newcommands}
+\begin{document}
+\tableofcontents
+
+\include{chapter1}
+
+\appendix
+\chapter{Help pages}
+\input{helppages}    % actual help text in helppages.tex
+\input{hypertargets}
+\end{document}
+
+

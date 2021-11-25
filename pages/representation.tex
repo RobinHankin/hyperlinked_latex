@@ -1,0 +1,42 @@
+\newcommand{\representationhelptext}{
+  \section{Representation help}
+
+A {\bf representation} of $L$ is a \liealgebrahomo
+
+\mainbox{Formally, if $L$ is a \liealgebra\ over a field $\mathbb{F}$
+  and $V$ a finite dimensional \vectorspace\ over $\mathbb{F}$, then a
+  representation of $L$ is a \liealgebrahomo:}
+        {\liealgebrahomomath\colon L\longrightarrow\glv}
+
+Loosely, we sometimes say that $V$ is ``a representation of $L$'' with
+$\phi$ understood.  Then we can specify a representation by giving a
+\liealgebrahomo, specifically $\liealgebrahomomath\colon
+L\longrightarrow\mathsf{gl}(n,\mathbb{F})$ in which case we call
+$\phi$ a matrix representation.
+
+A representation is equivalent to a \module.
+
+If the map \liealgebrahomomath\ is an isomorphism, then we say that
+the representation is {\bf faithful}.
+
+
+\subsection*{Examples}
+
+\begin{itemize}
+\item The \adjoint\ map is a representation of $L$.  We have
+  $\adjointmath\colon L\longrightarrow\operatorname{\mathsf{gl}}(L)$,
+  defined by $(\adjointmath x) y=\bracket{x}{y}$ which is a
+  \liealgebrahomo.  Thus \adjointmath\ is a representation with $V=L$.
+  The kernel of \adjointmath\ is the \centre\ of $L$: so if the centre
+  of $L$ is trivial, the adjoint representation is faithful.
+\item If $L$ is a Lie \subalgebra\ of $\operatorname{\mathsf{sl}}(V)$,
+  then the inclusion map
+  $L\longrightarrow\operatorname{mathsf{gl}}(V)$ is a \liealgebrahomo.
+  This is the {\bf natural representation} of $L$.  The natural
+  representation is always faithful.
+\item 
+\item 
+\end{itemize}
+
+ \newpage
+}

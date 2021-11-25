@@ -1,0 +1,25 @@
+To create "main.pdf", which is a hyperlinked latex document describing
+Lie algebra, type "pdflatex main" at the command prompt.  On some
+systems, you might need to "pdflatex main" a few times to get it to
+process without error.
+
+Editing.
+
+To add a new hyperlinked concept, you need to do the following things:
+
+1. To "main.tex", or "chapter1.tex", add a line like "\foo", which
+will not be defined.  To fix this:
+
+2.  To "newcommands.tex"; add a line like
+"newcommand{\foo}{\hyperlink{foo_help}{foo}}".  You can also add a
+line like
+"newcommand{\foomath}{\hyperlink{foo_help}{\ensuremath{\operatorname{foo}}}}"
+for use in formulas.
+
+3.  To "hypertargets.tex", add a line like "\hypertarget
+{foo_help}{\foohelptext}"
+
+4.  To "helppages.tex", add a line like "\include{pages/foo}"
+
+5.  Create "foo.tex".  Use "ideal.tex" as a template but change "idea"
+to "foo".

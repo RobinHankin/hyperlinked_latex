@@ -1,0 +1,37 @@
+\newcommand{\killinghelptext}{   % \adjoint and \adjointmath link here
+\section{The Killing form}
+
+If $L$ is a complex \liealgebra\ then the {\bf Killing form} on $L$ is
+the map $\kappa\colon L\times L\longrightarrow\mathbb{F}$ defined by
+\mainbox{ }{
+  \operatorname{\kappa}(x,y)=\operatorname{tr}\left(\operatorname{ad}
+  x\circ\operatorname{ad} y\right)\qquad x,y\in L }
+
+\subsection*{Notes}
+
+The definition requires some unpacking.  If $x\in L$, then
+$\operatorname{ad} x$ is a map from $L$ to itself, given by
+$\operatorname{ad} x(y) := \bracket{x}{y}$.  This map will be
+represented by a matrix $M_x$ in some basis of $V$.  Similarly,
+$\operatorname{ad} y$ corresponds to another matrix $M_y$.  The
+killing form $\kappa(x,y)$ is given by the \trace\ of the matrix
+product $M_xM_y$.
+
+\subsection*{Facts}
+
+\begin{itemize}
+\item The Killing form is symmetric: $\kappa(u,v)=\operatorname{\kappa}(v,w)$
+\item The Killing form is bilinear:
+  $\kappa(u+v,w)=\kappa(u,w)+\operatorname{\kappa}(v,w)$
+\item The Killing form has a sort of associativity:
+  $\kappa\left(\bracket{x}{y},z\right)=\kappa\left(x,\bracket{y}{z}\right)$.
+  Sometimes we say the Killing form is an ``invariant form''.
+  \item The Killing form is invariant under automorphisms of $L$, that
+    is $\kappa\left(A(x),A(y)\right)=\kappa(x,y)$.
+  \item The Killing form of a \nilpotentliealgebra\ is identically
+    zero.
+    
+  \end{itemize}
+
+\newpage
+}

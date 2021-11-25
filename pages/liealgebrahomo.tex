@@ -1,0 +1,61 @@
+\newcommand{\liealgebrahomohelptext}{
+  \section{Lie algebra homomorphism help here!}
+
+  (this page is about Lie algebra homomorphisms).  A {\bf
+    homomorphism} (sometimes {\bf Lie algebra homomorphism}) is a
+  linear map that preserves Lie brackets.  Note that a {\bf Lie
+    homomorphism} is a different thing (which refers to \module s).
+
+  \mainbox{Formally, if $L_1$ is a Lie algebra, then $\phi\colon
+    L_1\longrightarrow L_2$ is a Lie algebra homomorphism
+    if}{\phi(\alpha x+\beta y)=\alpha\phi(x)+\beta\phi(y)\qquad\mbox{and}\qquad
+    \phi\left(\bracket{x}{y}\right)=\bracket{\phi(x)}{\phi(y)}}
+
+  Alternatively, we might require that
+  \begin{itemize}
+  \item $\phi$ is linear: $\phi(\alpha x+\beta y)=\alpha\phi(x)+\beta\phi(y)$
+  \item $\phi$ commutes past Lie brackets, that is:
+    $\phi\left(\bracket{x}{y}\right)=\bracket{\phi(x)}{\phi(y)}$
+  \end{itemize}
+  
+  \subsection{Examples}
+  \begin{itemize}
+    \item A good homomorphism to consider is furnished by an
+      \ideal\ $I$ of $L$.  Define $\phi$ as the map that takes an
+      element $x\in L$ to its coset $I+x$ (this is the
+      \quotient\ map).  Formally, $\phi\colon L\longrightarrow
+      L\quotientmath I$ with $\phi(x)=I+x$.  See the {\bf three
+        isomorphism theorems} below.
+    \item Consider the \trace\ map $\tracemath\colon
+      M_n(\mathbb{F})\longrightarrow\mathbb{F}$ which takes an
+      $n\times n$ matrix with elements in $\mathbb{F}$ to its \trace.
+      This is a Lie algebra homomorphism as both sides of the
+      definition are zero:
+      $\tracemath(\bracket{x}{y})=\tracemath(xy=yx)=0$; but
+      $\bracket{\tracemath(x)}{\tracemath(y)}=0$ as well, for the
+      bracket is taken in the abelian Lie algebra $\mathbb{F}$.  The
+      kernel of the \trace\ map is matrices of trace zero,
+      $\mathsf{sl}(n,\mathbb{F})$.  Also note
+           \end{itemize}
+  
+  \subsection*{Isomorphism theorems}
+  
+  There are three isomorphism theorems for Lie algebra homomorphisms
+  that are analogous to the three isomorphism theorems in group
+  theory:
+  \begin{itemize}
+  \item If $\phi\colon L_1\longrightarrow L_2$ is a Lie algebra
+    homomorphism, then $\operatorname{ker}\phi$ is an \ideal\ of
+    $L_1$; also, the image of $\phi$, $\operatorname{im}\phi$ is a
+    \subalgebra\ of $L_2$; and finally the \quotient\ algebra
+    $L_1\quotientmath\operatorname{ker}\phi\cong\operatorname{im}\phi$.
+  \item If $I$ and $J$ are \ideal s of a Lie algebra, then
+    $(I+J)\quotientmath J\cong I\quotientmath(I\cap J)$.
+  \item If $I$ and $J$ are \ideal s of a Lie algebra $L$, and
+    $I\subseteq J$, then $J\quotientmath I$ is an ideal of
+    $L\quotientmath I$, and furthermore $(L\quotientmath
+    I)\quotientmath (J\quotientmath I)\cong L\quotientmath J$.
+  \end{itemize}
+  
+  \newpage
+}

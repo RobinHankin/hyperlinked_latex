@@ -1,0 +1,39 @@
+\newcommand{\nilpotentmaphelptext}{
+  \section{Nilpotent map help}
+
+  A {\bf Nilpotent linear map} is a linear map $x$ for whcih $x^r$ is
+  the zero map for some $r\geqslant 1$.
+
+  \subsection*{Facts}
+  Given $L$, a Lie algebra:
+  \begin{itemize}
+    \item If $x\in L$ and $x\colon V\longrightarrow V$ is a nilpotent
+      map, then the adjoint map $\adjointmath x\colon L\longrightarrow
+      L$ is also nilpotent\footnote{Proof: given $x$ is nilpotent, so
+        suppose $x^r=0, r\geqslant 1$.  We will show that
+        $\left(\adjointmath x\right)^{2r-1}$ is the zero function.
+        For any $y\in L$, we have $\left(\adjointmath
+        x\right)(y)=\bracket{x}{y},\left(\adjointmath
+        x\right)^2(y)=\left(\adjointmath
+        x\right)\left(\left(\adjointmath x\right) (y)\right)=
+        \bracket{x}{\bracket{x}{y}}$, and so on.  Then expand
+        $\left(\adjointmath
+        x\right)^{2r-1}(y)=[x,[x,[x,\ldots[x,y]]]\ldots]$ in powers of
+        $x$ and $y$.  There is only a single $y$ there; every term in
+        the expansion is $\propto x^iyx^{2r-1-i}$ for some $i$ with $0
+        \leqslant i < 2r$.  Each term in the expansion is zero: if
+        $j\geqslant r$ we have $x^j=0$ and if not, we know $2r-j>r$ so
+        $x^{2r-j}=0$.  Thus $\left(\adjointmath x\right)^{2r-1}=0$.}
+      (recall that $\adjointmath x(y)=\bracket{x}{y}$)
+    \item If $L$ is a subalgebra of $\glv$ ($V$ nonzero) with every
+      element of $L$ nilpotent, then:
+      \begin{itemize}
+      \item $\exists v\in V\backslash\left\{\boldzero\right\}$ such
+        that $xv=0\quad\forall x\in L$.
+      \item (Engel's theorem).  There is a basis of $V$ in which every
+        element of $L$ is a strictly upper triangular matrix.
+      \end{itemize}
+  \end{itemize}
+  
+ \newpage
+}

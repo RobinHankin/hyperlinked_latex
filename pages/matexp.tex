@@ -1,0 +1,40 @@
+\newcommand{\matexphelptext}{
+  \section{Matrix exponential help here}
+
+If $M$ is a square matrix with real or complex entries, then the {\bf
+  matrix exponential} of $M$, written $e^M$ or $\exp(M)$ is defined
+analogously to the exponential of a complex number:
+
+\boxeq{
+  e^M=I+M+\frac{M^2}{2}+\frac{M^3}{3!}+\cdots
+}
+
+\noindent Alternatively we could write $\exp(M)=\sum_{n\geq 0}M^n/n!$.
+
+\subsection*{Facts}
+
+\begin{itemize}
+\item $e^0=\boldmath{I}$
+\item  $\left(e^X\right)^*=e^{X^*}$
+\item $e^X$ is invertible with $\left(e^X\right)^{-1}=e^{-X}$.
+\item $e^{a+bX}=e^{aX}e^{bX}$ for any $a,b\in\mathbb{C}$.
+\item If $X$ and $Y$ commute, that is $XY=YX$, then $e^X$ and $e^Y$
+  also commute, with $e^{X+Y}=e^Xe^Y=e^Ye^X$.
+\item if $C$ is invertible, then $e^{CXC^{-1}}=Ce^XC^{-1}$.
+  \item The function $f\colon\mathbb{R}\longrightarrow
+    M_c(\mathbb{C})$ given by $f(t)=e^{tX}$, for $X$ some fixed
+    matrix, is smooth with $\displaystyle\frac{d
+      e^{tX}}{dt}=Xe^{tX}=e^{tX}X$; and in particular
+    $\displaystyle\left.\frac{d e^{tX}}{dt}\right|_{t=0}=X$.
+    \item The Lie product formula holds:
+      $e^{X+Y}={\displaystyle\lim\atop r\longrightarrow\infty}\left(e^\frac{X}{r}e^\frac{Y}{r}\right)^r$.
+  \item Every invertible $n\times n$ complex matrix can be expressed
+    as $e^X$ for some $X\in M_n(\mathbb{C})$.
+  \item $\det e^X = e^{\operatorname{trace}(X)}$.
+    \item An inverse to the matrix exponential is the \matlog. 
+\end{itemize}
+
+
+
+ \newpage
+}

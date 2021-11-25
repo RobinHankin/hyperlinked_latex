@@ -1,0 +1,53 @@
+\newcommand{\modulehelptext}{
+  \section{Module help}
+
+A {\bf Lie module} is an alternative way of thinking about Lie algebra
+\representation s.
+
+\mainbox{Formally, if $L$ is a Lie algebra over $\mathbb{F}$, then a
+  {\bf L-module} is a finite dimensional \vectorspace\ over
+  $\mathbb{F}$, together with a map}
+        {L\times V\longrightarrow V\qquad \left(x,v\right)\mapsto x\moduledot v}{
+          where
+          \begin{itemize}
+          \item $(\lambda x+\mu y)\moduledot v=\lambda(x\moduledot v)+\mu(y\moduledot v
+            )$
+          \item $x\cdot(\lambda v+\mu w)=\lambda(x\cdot v)+\mu(x\cdot w)$
+          \item $\bracket{x}{y}\cdot v=x\cdot(y\cdot v)-y\cdot(x\cdot v)$
+          \end{itemize}
+          whenever $x,y\in L$, $u,v\in V$, and $\lambda,\mu\in\mathbb{F}$.
+        }
+
+\subsection*{Examples}
+
+\begin{itemize}
+\item Given a \representation\ $\liealgebrahomomath\colon
+  L\longrightarrow\glv$, we can consider $V$ to be an $L$-module by
+  defining $x\cdot v$ as $\liealgebrahomomath(x)(v)$ whenever $x\in
+  L$, $v\in V$.  The first two conditions are straightforward.  For
+  the third, we have
+  \[
+  \bracket{x}{y}\cdot
+  v=\liealgebrahomomath\left(\bracket{x}{y}\right)(v)=\bracket{\liealgebrahomomath(x)}{\liealgebrahomomath{(y)}}(v)
+  \]
+  and because the Lie bracket in \glv\ is just the commutator of
+  linear maps, this is equal to
+  \[
+  \left(  \liealgebrahomomath(x)\liealgebrahomomath(y)-\liealgebrahomomath(y)\liealgebrahomomath(x)\right)(v)=
+  \liealgebrahomomath(x)\liealgebrahomomath(y)(v)-\liealgebrahomomath(y)\liealgebrahomomath(x)(v)
+  \] which by
+  definition is $x\cdot(y\cdot v)-y\cdot(x\cdot v)$.
+\item  If $I$ is an \ideal\ of Lie algebra $L$.  The FACTOR MODULE $L/I$ becomes an $L$-module by defining
+  \[
+  x\moduledot\left(I+y\right)=I + \left(\adjointmath x\right)(y) = I+\bracket{x}{y}
+  \]
+  Alternatively, we might say that the \quotient\ algebra $L/I$ is a
+  Lie algebra with bracket defined as
+  $\bracket{I+x}{I+y}=I+\bracket{x}{y}$.  So, regarded as an
+  $L/I$-module, the Factor Module $L/I$ is actually the
+  \adjoint\ \representation\ of $L/I$ on itself.
+\item 
+\end{itemize}
+
+ \newpage
+}

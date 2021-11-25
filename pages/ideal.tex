@@ -1,0 +1,42 @@
+\newcommand{\idealhelptext}{
+  \section{Ideal help here!}
+
+  An {\bf ideal} is a \subspace\ of a \liealgebra\ that is closed
+  under Lie brackets.
+
+\mainbox{Formally, if $L$ is a \liealgebra\, then $I$ is an ideal if}{
+  {x\in L, y\in I\longrightarrow\bracket{x}{y}\in I}}
+
+Alternatively, we might write $x\in L\longrightarrow [I,x]\in I$.
+Ideals are analogous to normal subgroups in group theory.
+
+\subsection*{Notes}
+\begin{itemize}
+  \item The condition of being an ideal is stronger than the condition
+    of being a \subalgebra.  For $I$ to be a subalgebra of $L$, it
+    only needs the property that $\bracket{I}{x}\in I$ for any $x\in
+    I$; it is not necessary that $\bracket{I}{x}\in I$ for any $x\in
+    L$.
+\end{itemize}
+
+
+
+\subsection*{Examples}
+
+
+\subsection*{Facts}
+\begin{itemize}
+\item  Suppose $I$ and $J$ are ideals of $L$.  Then we can construct new
+ideals in different ways:
+\begin{itemize}
+\item The intersection $I\cap J$ is an ideal of $L$.
+\item $I+J=\left\{x+y\colon x\in I,y\in J\right\}$ is an ideal of $L$.
+\item $\bracket{I}{J}=\operatorname{Span}(\bracket{x}{y}\colon x\in
+  I,y\in J)$ is an ideal of $L$.  Note that this is automatically
+  a \subspace\ of $L$.  Note that $\bracket{L}{L}=L'$ is the
+  \derivedalgebra\ of $L$.
+\end{itemize}
+\end{itemize}
+
+ \newpage
+}
